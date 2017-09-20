@@ -92,7 +92,11 @@ $(function() {
     const videoSource = $('#videoSource').val();
     const constraints = {
       audio: {deviceId: audioSource ? {exact: audioSource} : undefined},
-      video: {deviceId: videoSource ? {exact: videoSource} : undefined},
+      video: {
+        deviceId: videoSource ? {exact: videoSource} : undefined,
+        width: 320,
+        height: 240
+      },
     };
     navigator.mediaDevices.getUserMedia(constraints).then(stream => {
       $('#my-video').get(0).srcObject = stream;

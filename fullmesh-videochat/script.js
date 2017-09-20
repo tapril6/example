@@ -94,8 +94,8 @@ $(function() {
       audio: {deviceId: audioSource ? {exact: audioSource} : undefined},
       video: {
         deviceId: videoSource ? {exact: videoSource} : undefined,
-        width: 640,
-        height: 480
+        width: 352,
+        height: 288
       },
     };
     navigator.mediaDevices.getUserMedia(constraints).then(stream => {

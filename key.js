@@ -1,0 +1,1 @@
+window.__SKYWAY_KEY__ = '375489a9-5d6b-406a-945b-972f9533d0f5';
